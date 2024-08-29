@@ -19,7 +19,7 @@ waiter.until(
     EC.presence_of_element_located((By.ID, "landscape"))
 )
 
-imageText = driver.find_element(By.CSS_SELECTOR, "#landscape")
+imageText = driver.find_element(By.CSS_SELECTOR, "#award")
 txt = imageText.get_attribute("src")
 print(txt)
 
