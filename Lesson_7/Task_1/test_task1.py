@@ -20,8 +20,10 @@ def test_task_1():
     data_type.job_position("QA")
     data_type.company("SkyPro")
     data_type.click_submit()
-    
+
     highlight_color = HighlightColor(driver)
+
+
     
     first_name_color = highlight_color.first_name_color()
     last_name_color = highlight_color.last_name_color()
@@ -33,10 +35,6 @@ def test_task_1():
     phone_number_color = highlight_color.number_color()
     job_color = highlight_color.job_color()
     company_color = highlight_color.company_color()
-    
+
     assert zip_code_highlight == "rgba(132, 32, 41, 1)"
     assert first_name_color and last_name_color and address_color and city_color and country_color and email_color and phone_number_color and job_color and company_color == "rgba(15, 81, 50, 1)"
-
-    
-
-

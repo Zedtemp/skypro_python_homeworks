@@ -8,6 +8,7 @@ from Inventory_Page import Inventory
 from Delivery import Delivery
 from Total import Total
 
+
 def test_task_3():
     driver = webdriver.Chrome()
     auth = Auth(driver)
